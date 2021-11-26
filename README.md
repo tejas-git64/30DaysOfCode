@@ -2,11 +2,10 @@
 
 ### **Day 1: JS Drum kit**
 
-![drum kit preview](https://user-images.githubusercontent.com/67954224/143588138-2e6e8f02-f214-468b-8590-cec82b437668.png) 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/67954224/143592962-1b6abb0d-e28a-4b4c-b771-203df303b094.png" width="700px"></p>
 
-This project uses **eventHandlers** and **css attributes => 'keydown' , 'keyup'**
-using **ASCII** values of the given row of keys each key gives a sound output from its assigned sound file.
-used html's *data-key* attribute to play the assigned sound for each key 
-styled with inline css ♥ customize it if you wish!
-
+#### This project uses **eventHandlers** and **css attributes => 'keydown' , 'keyup'**
+Using **ASCII** values of the given row of keys each key gives a sound output from its assigned sound file along with html's *data-key* attribute to play the assigned sound for each key press. 
+Styled with css ♥ customize it if you wish!
 
