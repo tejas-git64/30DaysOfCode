@@ -6,7 +6,7 @@
 
 This project uses **eventHandlers** and **css attributes => 'keydown' , 'keyup'**
 using **ASCII** values of the given row of keys each key gives a sound output from its assigned sound file.
-used html's *data-key* attribute, eventhandlers to play the assigned sound for each key 
+used html's *data-key* attribute to play the assigned sound for each key 
 styled with inline css ♥ customize it if you wish!
 
 
