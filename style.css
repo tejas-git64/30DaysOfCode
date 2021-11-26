@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #000000, #1f0e1e34), url("./DJ-set.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: relative;
+  top: 60vh;
+}
+
+.key {
+  border: 0.5px solid #00f7ff;
+  margin: 10px 1vw;
+  font-size: 25px;
+  transition: 0s;
+}
+
+.pressed {
+  border: 2px solid #d739ff;
+  transform: scale(1.1);
+}
+
+.key p {
+  color: #d739ff;
+  padding: 0px 3.5vw;
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.key .sound {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 20px;
+}
