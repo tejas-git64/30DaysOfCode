@@ -4,7 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JS clock</title>
   </head>
-  <body></body>
+  <body>
+    <div class="clock">
+      <p class="hourhand"></p>
+      <p class="secondhand"></p>
+      <p class="minutehand"></p>
+      <p></p>
+    </div>
+    
+    <style>
+      body {
+        background: #632B00;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .clock {
+        margin-top: 200px;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background: #EEEEEE;
+        box-shadow: inset 0px 0px 20px #3C3C3C;
+        box-shadow: 0px 0px 30px #000;
+        border-radius: 150px;
+        transition: all 0.05s;
+      }
+      
+      .clock p:nth-child(1) {
+        width: 80px;
+        height: 10px;
+        background: #000000;
+        border: 2px solid #8DFFD7;
+        position: relative;
+        left: 80px;
+        top: 125px;
+        border-radius: 20px;
+        transform-origin: 100%;
+      }
+      
+      .clock p:nth-child(2) {
+        width: 120px;
+        height: 3px;
+        background: #FF0000;
+        position: relative;
+        left: -26px;
+        top: 130px;
+        border-radius: 20px;
+        transform-origin: 100%;
+        transform: rotate(90deg);
+        transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+        z-index: 3;
+      }
+      
+      .clock p:nth-child(3) {
+      width: 105px;
+      height: 10px;
+      background: #000000;
+      border: 2px solid #00FFD7;
+      position: relative;
+      left: -123px;
+      top: 130px;
+      border-radius: 20px;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+      }
+      
+      .clock p:nth-child(4) {
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        background: #FF0000;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 120px;
+        left: -135px;
+      }
+      
+    </style>
+   
+    <script>
+    const shand = document.querySelector('.secondhand');
+    const mhand = document.querySelector('.minutehand');
+    const hhand = document.querySelector('.hourhand');
+      function setDate() {
+        const now = new Date();
+        const seconds = now.getSeconds();
+        const minutes = now.getMinutes();
+        const secondsDegrees = ((seconds/60)*360)+90;
+        const minutesDegrees = ((minutes/60)*360)+90;
+        const hoursDegrees = ((minutes/12)*360)+90;
+        shand.style.transform = `rotate(${secondsDegrees}deg)`;
+        mhand.style.transform = `rotate(${minutesDegrees}deg)`;
+        hhand.style.transform = `rotate(${hoursDegrees}deg)`;
+      }
+     setInterval(setDate, 1000);
+    </script>
+  </body>
 </html>
