@@ -12,3 +12,14 @@
 Styled with CSS ♥️ customize it if you wish!<br /><br />
 
 ### **Day 2: JS and CSS clock**
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/67954224/143689509-e18ed22a-fd73-4c40-a762-65e99fa9a0f5.gif">
+</p>
+
+### The 2nd project of this series!! a clock!
+This project uses JS's built in methods like **getMinutes()** and **getSeconds()** to depict the correct time
+- Has three needles - hour, minutes and seconds
+- Used cubic-bezier() to give that ticking effect just like in the original project
+
+Styled like a wall clock 🕑 at home<br /><br />
