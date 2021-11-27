@@ -9,9 +9,6 @@
 - Each key gives outputs a sound given for that key according to its **ASCII** value
 - Uses HTML's *data-key* attribute to play the assigned sound for each keypress. 
  
-Styled with CSS ♥️ customize it if you wish!
-
-
-
+Styled with CSS ♥️ customize it if you wish!<br /><br />
 
 ### **Day 2: JS and CSS clock**
