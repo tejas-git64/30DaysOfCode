@@ -7,6 +7,137 @@
     <title>CSS variable manipulation</title>
 </head>
 <body>
-    
+  <div class="container">
+    <p>CSS variable manipulation with <span>JS</span></p>
+   <div class="slidecontainer">
+    <label for="blur"><span>Blur level:</span>
+    <input type="range" min="1" max="100" value="50" class="blurlvl" step="1" oninput="myfunc1()"></label>
+    <label for="b"><span>Border:</span>
+    <input type="range" min="1" max="30" value="50" class="border" step="1" oninput=""></label>
+    <label for="bcolor"><span>Border colour:</span>
+      <input type="color" min="1" max="30" value="" class="bcolor" step="1"></label>
+   </div>
+   <div class="image">
+    <img src="https://www.transindus.co.uk/media/1971/tailormade-and-group-tour-indonesia-highlight-komodo-3.jpg" alt="img" class="pic"/>
+   </div>
+  </div>
+    <style type="text/css">
+      body {
+        width: 100%;
+        height: 100vh;
+        background: #F5F5F5;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .root {
+        --blur: 10px;
+        --border: 1px;
+        --color: #FFEE00;
+      }
+      
+      p {
+        margin: 0px;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        padding: 40px 0px;
+        border-bottom: 1px solid #CECECE;
+        font-family: sans-serif;
+        text-shadow: 0px 5px 15px #8948FF;
+      }
+      
+      .container {
+        width: 400px;
+        height: 800px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background: #FFFFFF6E;
+        box-shadow: 0px 0px 25px #737373;
+        border-radius: 15px;
+      }
+      
+      .container p span {
+        color: var(--color);
+      }
+      
+      .slidecontainer {
+        position: relative;
+        padding: 45px 10px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px dashed #000;
+      }
+      
+      .slidecontainer label {
+        border: 1px solid #CECECE;
+        padding: 20px 15px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+      }
+      
+      .slidecontainer input {
+        float: right;
+        appearance: none;
+        width: 50%;
+        height: 10px;
+        background: #E4E4E4;
+      }
+      
+      input[type="range"]::-webkit-slider-thumb {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background: #00E8B2;
+      }
+      
+      input[type="color"] {
+        width: 100px;
+        height: 30px;
+        appearance: none;
+        border: none;
+        background: #DDDDDD;
+        margin-right: 30px;
+      }
+      
+      label span {
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+      }
+      
+      .image {
+        position: relative;
+        top: 70px;
+        right: -25px;
+        width: 350px;
+        height: 250px;
+        border: var(--border);
+        background: var(--bcolor);
+        filter: blur(var(--blurlvl));
+        border: 1px solid #000;
+      }
+      
+      img {
+        position: relative;
+        width: 350px;
+        height: 250px;
+      }
+      
+    </style>
+    <script type="text/javascript" charset="utf-8">
+      function myfunc1(value) {
+        let blur = document.querySelector('.blurlvl');
+        let pic = document.querySelector('.pic');
+        pic.style.filter = "blur(`${value}px`)";
+      }
+      
+    </script>
 </body>
 </html>
