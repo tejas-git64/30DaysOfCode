@@ -57,7 +57,7 @@ Here we're going to understand the usage of the following methods:
  <img src="https://user-images.githubusercontent.com/67954224/145004754-abadf6c7-a433-481d-b61d-a9dfaf92b394.gif">
 </p>
 
-#### These are the main functions used to work with flexbox in this project
+##### These are the main functions used to work with flexbox in this project
 
 - `display: flex` activates flexbox
 - `justify-content` aligns the div horizontally
