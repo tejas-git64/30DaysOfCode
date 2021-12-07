@@ -68,3 +68,21 @@ Here we're going to understand the usage of the following methods:
 
 Flexbox allows seamless wrapping and resizing with the changing width of the page, it can be used along with media queries to build a responsive site for devices of different width
 
+### Day 6: AJAX requests and responses
+
+#### In this project we finally learn about ajax(asynchronous javascript and xml requests) forget the xml part tho 😆
+
+JS in general handles execution synchronously via callstack ie executing funtions one by one behind the scenes, each function once called is added to execution context of the call stack, but here we're understanding how asynchronous execution of functions work. For now we use the `fetch()` method to fetch data from say a server/api.
+
+*In this project we are trying to implement a search bar capable of sorting results(cities/states) based on our inputs as it searches from the json for the key value pairs based on our search query*
+
+⚠ Functions used in this project:
+- `fetch()`: used to fetch data from the server/api
+- `filter()`: used to filter results based on the key value pairs
+- `push`: used to push results to the declared array
+- `json`: returns a promise which resolves with the result of parsing the body text as JSON. 
+- `replace`: searches for the required string/regular expression/key to be replaced, once found it replaces it with a new value and return a new string with the replaced value
+- `match()`: searches a string for a match against a regular expression, then returns an array consisting of the matched values, returns *null* if no match is found
+
+Uses both EventListeners **change** and **keyup** to display matches on key press
+
