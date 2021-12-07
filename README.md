@@ -53,6 +53,10 @@ Here we're going to understand the usage of the following methods:
 
 Flexbox allows seamless wrapping and resizing with the changing width of the page, it can be used along with media queries to build a responsive site for devices of different width
 
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/145004754-abadf6c7-a433-481d-b61d-a9dfaf92b394.gif">
+</p>
+
 
 
 - `display: flex` activates flexbox
