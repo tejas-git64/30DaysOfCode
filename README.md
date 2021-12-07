@@ -51,19 +51,20 @@ Here we're going to understand the usage of the following methods:
 
 ### its flexbox time!! one of most important topics in css, especially if you wanna play with images/div elements
 
-Flexbox allows seamless wrapping and resizing with the changing width of the page, it can be used along with media queries to build a responsive site for devices of different width
+### Here we use flexbox to align `p` elements to enlarge and shrink on click and also widen it
 
 <p align="center"> 
  <img src="https://user-images.githubusercontent.com/67954224/145004754-abadf6c7-a433-481d-b61d-a9dfaf92b394.gif">
 </p>
 
-
+#### These are the main functions used to work with flexbox in this project
 
 - `display: flex` activates flexbox
 - `justify-content` aligns the div horizontally
 - `align-items` align the div vertically
+- `transform` fuction used to create sliding animations of the top and bottom `p` element
+- `toggle()` This JS method is used to add and remove the class `open` which enlarges the font size of the middle `p` element
+- `includes()` This is another JS methods that returns a boolean value if a string contains a specific character/string 
 
-### Here we use flexbox to align `p` elements to enlarge and shrink on click and also widen it
-
-
+Flexbox allows seamless wrapping and resizing with the changing width of the page, it can be used along with media queries to build a responsive site for devices of different width
 
