@@ -76,6 +76,10 @@ JS in general handles execution synchronously via callstack ie executing funtion
 
 *In this project we are trying to implement a search bar capable of sorting results(cities/states) based on our inputs as it searches from the json for the key value pairs based on our search query*
 
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/145084707-320c2259-6bf4-4397-9d7a-6c28bc1ec4d4.gif">
+</p>
+
 ⚠ Functions used in this project:
 - `fetch()`: used to fetch data from the server/api
 - `filter()`: used to filter results based on the key value pairs
