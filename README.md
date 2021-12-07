@@ -44,3 +44,22 @@ Here we're going to understand the usage of the following methods:
 - `filter()` creates a new array filled with elements that pass a test provided by a function
 - `reduce()` executes a reducer function for each value in an array and returns a single value which is the function's accumulated result
 - `map()` creates a new array from the results of a previously existing function 
+
+
+
+### **Day 5: Flexbox Gallery**
+
+### its flexbox time!! one of most important topics in css, especially if you wanna play with images/div elements
+
+Flexbox allows seamless wrapping and resizing with the changing width of the page, it can be used along with media queries to build a responsive site for devices of different width
+
+
+
+- `display: flex` activates flexbox
+- `justify-content` aligns the div horizontally
+- `align-items` align the div vertically
+
+### Here we use flexbox to align `p` elements to enlarge and shrink on click and also widen it
+
+
+
