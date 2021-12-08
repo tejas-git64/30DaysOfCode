@@ -83,9 +83,9 @@ JS in general handles execution synchronously via callstack ie executing funtion
 ⚠ Functions used in this project:
 - `fetch()`: used to fetch data from the server/api
 - `filter()`: used to filter results based on the key value pairs
-- `push`: used to push results to the declared array
-- `json`: returns a promise which resolves with the result of parsing the body text as JSON. 
-- `replace`: searches for the required string/regular expression/key to be replaced, once found it replaces it with a new value and return a new string with the replaced value
+- `push()`: used to push results to the declared array
+- `json()`: returns a promise which resolves with the result of parsing the body text as JSON. 
+- `replace()`: searches for the required string/regular expression/key to be replaced, once found it replaces it with a new value and return a new string with the replaced value
 - `match()`: searches a string for a match against a regular expression, then returns an array consisting of the matched values, returns *null* if no match is found
 
 Uses both EventListeners **change** and **keyup** to display matches on key press
