@@ -47,7 +47,7 @@ Here we're going to understand the usage of the following methods:
 
 
 
-### **Day 5: Flexbox Gallery**
+### Day 5: **Flexbox Gallery**
 
 ### its flexbox time!! one of most important topics in css, especially if you wanna play with images/div elements
 
@@ -68,7 +68,7 @@ Here we're going to understand the usage of the following methods:
 
 Flexbox allows seamless wrapping and resizing with the changing width of the page, it can be used along with media queries to build a responsive site for devices of different width
 
-### Day 6: AJAX requests and responses
+### Day 6: **AJAX requests and responses**
 
 #### In this project we finally learn about ajax(asynchronous javascript and xml requests) forget the xml part tho 😆
 
@@ -90,3 +90,17 @@ JS in general handles execution synchronously via callstack ie executing funtion
 
 Uses both EventListeners **change** and **keyup** to display matches on key press
 
+
+### Day 7: **Array Methods-2**
+
+#### Some more array methods to gouge your eyes and mind on
+
+**DNMA - does not mutate the array**<br>
+**MA - mutates the array**
+
+Here are the rest of the methods:
+- `some()` checks if atleast one of the array elements pass a test and returns a boolean as a result //DNMA
+- `every()` checks if all the array elements pass a test and returns a boolean as a result  //DNMA
+- `find()` returns the value of the first element that passes a test, and returns undefined if no such element is found, //DNMA
+- `findIndex()` returns the index (position) of the first element that passes a test, returns -1 if no match is found. //DNMA
+- `splice()` method adds and/or removes array elements. //MA 
