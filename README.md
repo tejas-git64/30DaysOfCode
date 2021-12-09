@@ -113,7 +113,7 @@ Here are the rest of the methods:
 <p align="center"> 
  <img src="https://user-images.githubusercontent.com/67954224/145401999-52960d80-eb37-443a-b982-2ddfe2380c97.gif">
 </p>
-Here we use HTML's `<canvas>` tag to draw graphics, on the fly via scripting (usually JavaScript).
+Here we use HTML's `canvas` tag to draw graphics, on the fly via scripting (usually JavaScript).
 Functions used in this project:
 
 - `getContext()` method is used to enable drawing on the canvas, `2d` enables the creation of a CanvasRenderingContext2D object representing a two-dimensional rendering context 
