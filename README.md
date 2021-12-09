@@ -33,7 +33,7 @@ Styled like a wall clock 🕑 at home<br /><br />
 ### Playing with a few artistic CSS variables
 Even here we use HTML's `data-` attribute, to assign units in px
 - Uses CSS's pseudo class `:root` to assign custom values from each input i.e range-sliders & color picker
-- Uses CSS's EventListeners like `change` & `mousemove` to update new values
+- Uses CSS's EventListeners like `change` & `mousemove` to update new values<br /><br />
 
 ### **Day 4: Array Methods-1**
 
@@ -43,7 +43,7 @@ Here we're going to understand the usage of the following methods:
 - `split()` spilts an array/object based on the position assigned, used mainly in destructing objects
 - `filter()` creates a new array filled with elements that pass a test provided by a function
 - `reduce()` executes a reducer function for each value in an array and returns a single value which is the function's accumulated result
-- `map()` creates a new array from the results of a previously existing function 
+- `map()` creates a new array from the results of a previously existing function <br /><br />
 
 
 
@@ -66,7 +66,7 @@ Here we're going to understand the usage of the following methods:
 - `toggle()` This JS method is used to add and remove the class `open` which enlarges the font size of the middle `p` element
 - `includes()` This is another JS methods that returns a boolean value if a string contains a specific character/string 
 
-Flexbox allows seamless wrapping and resizing with the changing width of the page, it can be used along with media queries to build a responsive site for devices of different width
+Flexbox allows seamless wrapping and resizing with the changing width of the page, it can be used along with media queries to build a responsive site for devices of different width<br /><br />
 
 ### Day 6: **AJAX requests and responses**
 
@@ -88,7 +88,7 @@ JS in general handles execution synchronously via callstack ie executing funtion
 - `replace()`: searches for the required string/regular expression/key to be replaced, once found it replaces it with a new value and return a new string with the replaced value
 - `match()`: searches a string for a match against a regular expression, then returns an array consisting of the matched values, returns *null* if no match is found
 
-Uses both EventListeners **change** and **keyup** to display matches on key press
+Uses both EventListeners **change** and **keyup** to display matches on key press<br /><br />
 
 
 ### Day 7: **Array Methods-2**
@@ -103,4 +103,27 @@ Here are the rest of the methods:
 - `every()` checks if all the array elements pass a test and returns a boolean as a result  //DNMA
 - `find()` returns the value of the first element that passes a test, and returns undefined if no such element is found, //DNMA
 - `findIndex()` returns the index (position) of the first element that passes a test, returns -1 if no match is found. //DNMA
-- `splice()` method adds and/or removes array elements. //MA 
+- `splice()` method adds and/or removes array elements. //MA <br /><br />
+
+
+### Day 8: **HTML Canvas**
+
+#### Lets dive into html's creative and artistic side 🎨🖌
+
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/145401999-52960d80-eb37-443a-b982-2ddfe2380c97.gif">
+</p>
+Here we use HTML's `<canvas>` tag to draw graphics, on the fly via scripting (usually JavaScript).
+Functions used in this project:
+
+- `getContext()` method is used to enable drawing on the canvas, `2d` enables the creation of a CanvasRenderingContext2D object representing a two-dimensional rendering context 
+- `strokeStyle` property sets or returns the color, gradient, or pattern used for strokes
+- `lineJoin` property sets or returns the type of corner created, when two lines meet
+- `lineCap` property sets or returns the style of the end caps for a line
+- `lineWidth` property sets or returns the current line width, in pixels
+- `beginPath()` method begins a path, or resets the current path
+- `moveTo()` method moves a window's left and top edge to the specified coordinates
+- `lineTo()` method adds a new point and creates a line TO that point FROM the last specified point in the canvas
+- `stroke()` method draws the lines and border around the text and shapes, the color object can be set in terms of RGB or HSB depending on the color mode
+
+This project uses all of the **mouse** EventListeners ie `mousemove`, `mousedown`, `mouseup`, `mouseout`
