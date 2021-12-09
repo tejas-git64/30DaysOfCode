@@ -54,7 +54,7 @@ Here we're going to understand the usage of the following methods:
 ### Here we use flexbox to align `p` elements to enlarge and shrink on click and also widen it
 
 <p align="center"> 
- <img src="https://user-images.githubusercontent.com/67954224/145004754-abadf6c7-a433-481d-b61d-a9dfaf92b394.gif">
+ <img src="https://user-images.githubusercontent.com/67954224/145238332-1754a9c5-fbef-4fed-bd62-658ad3331b0a.gif">
 </p>
 
 ##### These are the main functions used to work with flexbox in this project
@@ -77,7 +77,7 @@ JS in general handles execution synchronously via callstack ie executing funtion
 *In this project we are trying to implement a search bar capable of sorting results(cities/states) based on our inputs as it searches from the json for the key value pairs based on our search query*
 
 <p align="center"> 
- <img src="https://user-images.githubusercontent.com/67954224/145084707-320c2259-6bf4-4397-9d7a-6c28bc1ec4d4.gif">
+ <img src="https://user-images.githubusercontent.com/67954224/145234442-a00243f5-b2b9-4730-8fcd-f2a3c4426aae.gif">
 </p>
 
 ⚠ Functions used in this project:
