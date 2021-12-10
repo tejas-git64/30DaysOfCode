@@ -145,15 +145,46 @@ Example: `console.log('I am sleepy %s typing all of this code...zZzZZ', '😪');
 
 **console** functions ⚠:
 - `console.warn()` used to give warnings in the console 
+  
+   ![Screenshot 2021-12-10 190222](https://user-images.githubusercontent.com/67954224/145582732-5513c742-4638-43d1-aa8e-5ca6fa943582.png)
+
 - `console.error()` used to pass errors in the console 
+
+   ![Screenshot 2021-12-10 190956](https://user-images.githubusercontent.com/67954224/145582844-20834d01-e766-477b-a659-95cef7cab1cc.png)
+
 - `console.info()` used to pass statements as an insight/information in the console 
+
+   ![Screenshot 2021-12-10 191434](https://user-images.githubusercontent.com/67954224/145583502-90d617db-facf-4c5c-b22d-01a57dfbc047.png)
+
 - `console.assert()` method tests if a given expression is true or not. If the expression evaluates to 0/false, an assertion failure is being caused, and the program is terminated.
+
+   ![Screenshot 2021-12-10 191657](https://user-images.githubusercontent.com/67954224/145583770-6a20acf6-9093-462d-b924-fd927886f43f.png)
+
 - `console.clear()` used to clear the console 
-- `console.log()` can be used give output in the console 
-- `console.dir()` displays an interactive list of the properties of the specified javaScript object
+
+- `console.log()` can be used give output in the console  
+ 
+  ![Screenshot 2021-12-10 185335](https://user-images.githubusercontent.com/67954224/145580974-c56c9c77-623c-4703-95be-989a793e4e52.png) 
+- `console.dir()` displays an interactive list of the properties of the specified javaScript object //element p is clicked on
+
+   ![Screenshot 2021-12-10 192018](https://user-images.githubusercontent.com/67954224/145584139-e87d704c-710d-4937-a64f-095f526942dd.png)
+
 - `console.groupCollapsed()`  method creates a new inline collapsed group in the Web Console
+
+   ![Screenshot 2021-12-10 192400](https://user-images.githubusercontent.com/67954224/145584753-72b3936b-b807-4662-b279-ad79ede2562d.png)
+   ![Screenshot 2021-12-10 192429](https://user-images.githubusercontent.com/67954224/145584759-ad6cc087-b659-4be7-8f8b-9cbb48a10b76.png)
+
 - `console.groupEnd()` method indicates the end of a message group
 - `console.count()` method keeps the count of words in a message  
+
+   ![Screenshot 2021-12-10 192626](https://user-images.githubusercontent.com/67954224/145585068-bb1bbda6-4796-441d-a82f-1e9202535576.png)
+
 - `console.time()` method starts a timer that you can use to track how long an operation takes
+
 - `console.timeEnd()` stops a timer that was previously started by calling `console.time()`
+
+    ![Screenshot 2021-12-10 192855](https://user-images.githubusercontent.com/67954224/145585389-a2660fd5-555a-465d-8260-283d8c26f423.png)
+    
 - `console.table()` method displays tabular data as a table, this function takes one mandatory argument data, which must be an array or an object, and one additional optional parameter columns
+
+   ![Screenshot 2021-12-10 193056](https://user-images.githubusercontent.com/67954224/145585643-abb10976-f9de-4ae4-870c-df412946a35e.png)
