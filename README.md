@@ -127,4 +127,33 @@ Functions used in this project:
 - `lineTo()` method adds a new point and creates a line TO that point FROM the last specified point in the canvas
 - `stroke()` method draws the lines and border around the text and shapes, the color object can be set in terms of RGB or HSB depending on the color mode
 
-This project uses all of the **mouse** EventListeners ie `mousemove`, `mousedown`, `mouseup`, `mouseout`
+This project uses all of the **mouse** EventListeners ie `mousemove`, `mousedown`, `mouseup`, `mouseout`<br /><br />
+
+
+### Day 9: Developer Tools
+
+#### Insights into handy dev tools and beyond `console.log` 👨‍💻
+
+`Attribute Modification` this dev tool helps in understanding/pinpointing which attribute is modified by javascript
+
+`%c` => `console.log` enables application of css properties in console for debuggable trial<br /> Example: `console.log('%c I am some great text', 'font-size:50px');` 
+#  I am some great text
+
+`%s` => `console.log` enables passing characters/strings much like in **C** language 😃<br />
+Example: `console.log('I am sleepy %s typing all of this code...zZzZZ', '😪');` 
+#### I am sleepy 😪 typing all of this code...zZzZZ <br /><br />
+
+**console** functions ⚠:
+- `console.warn()` used to give warnings in the console 
+- `console.error()` used to pass errors in the console 
+- `console.info()` used to pass statements as an insight/information in the console 
+- `console.assert()` method tests if a given expression is true or not. If the expression evaluates to 0/false, an assertion failure is being caused, and the program is terminated.
+- `console.clear()` used to clear the console 
+- `console.log()` can be used give output in the console 
+- `console.dir()` displays an interactive list of the properties of the specified javaScript object
+- `console.groupCollapsed()`  method creates a new inline collapsed group in the Web Console
+- `console.groupEnd()` method indicates the end of a message group
+- `console.count()` method keeps the count of words in a message  
+- `console.time()` method starts a timer that you can use to track how long an operation takes
+- `console.timeEnd()` stops a timer that was previously started by calling `console.time()`
+- `console.table()` method displays tabular data as a table, this function takes one mandatory argument data, which must be an array or an object, and one additional optional parameter columns
