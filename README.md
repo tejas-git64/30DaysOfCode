@@ -188,3 +188,17 @@ Example: `console.log('I am sleepy %s typing all of this code...zZzZZ', '😪');
 - `console.table()` method displays tabular data as a table, this function takes one mandatory argument data, which must be an array or an object, and one additional optional parameter columns
 
    ![Screenshot 2021-12-10 193056](https://user-images.githubusercontent.com/67954224/145585643-abb10976-f9de-4ae4-870c-df412946a35e.png)
+   
+   
+### Day 10: JS Checkbox 
+
+#### **Today were gonna build the classic checkbox but with a catch!**
+
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/145674620-dfa10b00-f438-425c-9c54-7ac6e691cf9b.gif">
+</p>
+
+We're gonna create a checkbox in which we check one checkbox as the starting point and another as the endpoint, once we click the endpoint/last checkbox while holding the `shift` key, we check all the boxes right from the start to the endpoint much like **select all** function in file managers/Gmail
+
+**We've used methods like `forEach()` and `e` along with an eventListener in this project to make IT work** <br />
+Don't worry if you don't get it, i did'nt get it the first time either and there are more ways to do this too!! 👨‍💻 
