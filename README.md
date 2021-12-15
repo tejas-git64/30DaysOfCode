@@ -130,7 +130,7 @@ Functions used in this project:
 This project uses all of the **mouse** EventListeners ie `mousemove`, `mousedown`, `mouseup`, `mouseout`<br /><br />
 
 
-### Day 9: Developer Tools
+### Day 9: **Developer Tools**
 
 #### Insights into handy dev tools and beyond `console.log` 👨‍💻
 
@@ -190,7 +190,7 @@ Example: `console.log('I am sleepy %s typing all of this code...zZzZZ', '😪');
    ![Screenshot 2021-12-10 193056](https://user-images.githubusercontent.com/67954224/145585643-abb10976-f9de-4ae4-870c-df412946a35e.png)
    
    
-### Day 10: JS Checkbox 
+### Day 10: **JS Checkbox** 
 
 #### **Today were gonna build the classic checkbox but with a catch!**
 
@@ -201,4 +201,42 @@ Example: `console.log('I am sleepy %s typing all of this code...zZzZZ', '😪');
 We're gonna create a checkbox in which we check one checkbox as the starting point and another as the endpoint, once we click the endpoint/last checkbox while holding the `shift` key, we check all the boxes right from the start to the endpoint much like **select all** function in file managers/Gmail
 
 **We've used methods like `forEach()` and `e` along with an eventListener in this project to make IT work** <br />
-Don't worry if you don't get it, i did'nt get it the first time either and there are more ways to do this too!! 👨‍💻 
+Don't worry if you did'nt get it, i did'nt get the first time either and there are more ways to do this too!! 👨‍💻 <br /><br />
+
+
+### Day 11: **Custom HTML5 Video Player**
+
+#### **We're gonna create a custom video player in html5!!** 
+
+⚠ We've used a seperate video file here but you can add your own file or from YouTube ▶
+
+This is a basic video player whose properties are tweaked slightly, we use `-webkit-` functions to work cross platform, although every browser gives a slightly different video player 
+
+- `-webkit-slider-runnable-track` this default function is used to modify the track/progress line of a video, we can change its width, height and also its color much like how we've done in ours
+
+- `-webkit-slider-thumb` This is the thumb or the circle on the runnable track, using which we can drag the progress of our video, to that specific timestamp
+<br /> <br />
+
+We also use `input` as range sliders to change the volume and playback rate of the video
+That's it for today! add your own video file/yt link to it and tweak css your own way!!
+<br /><br />
+
+### Day 12: **Key Sequence Detection**
+
+#### Here we'll take a short break and work on some simple array manipulation but we'll use a secret keyword to give a secret message once the array contains all the characters of the keyword!!
+
+PS: The secret keyword used in this project is **Treasure**
+
+we use the `splice()` method to constrict the array length to the length of the secret keyword, just in order to give the secret message on passing the characters of the secret keyword in order......which we do  
+
+we also use other methods like: 
+
+- `join()` helps to stich individual characters in an array into a single string
+- `includes()` gives a boolean value indicating the presence or absence of the word/character passed to validate its presence in a string
+- `push()` helps to push/add characters into an array from the right end of the array
+
+Lastly we've used the `keyup` EventListener with the event `e` parameter to pass as a function to return the key pressed on the window, also there's nothing in the window silly 😆, the window is just the body in this case if not declared!!
+Cheers ☕☕
+
+
+
