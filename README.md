@@ -212,6 +212,10 @@ Don't worry if you did'nt get it, i did'nt get the first time either and there a
 
 This is a basic video player whose properties are tweaked slightly, we use `-webkit-` functions to work cross platform, although every browser gives a slightly different video player 
 
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/146237346-971a5208-4d07-4d38-a93d-e458826e7763.gif">
+</p>
+
 - `-webkit-slider-runnable-track` this default function is used to modify the track/progress line of a video, we can change its width, height and also its color much like how we've done in ours
 
 - `-webkit-slider-thumb` This is the thumb or the circle on the runnable track, using which we can drag the progress of our video, to that specific timestamp
