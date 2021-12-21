@@ -257,8 +257,11 @@ Cheers ☕☕<br /><br />
 We use eventListeners to track the scroll on the window to trigger the functions necessary to horizontally make the images appear on the empty padding
 We also use CSS's `active` pseudo class to translate it in the X direction and `classList` to add and remove classes from CSS via javascript
 
-Methods used:
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/146948477-32f3a91e-586b-468d-99f1-b917851d4d8c.gif">
+</p>
 
+Methods used:
 - `forEach()` calls a function for each element in the array
 
 **Window** properties used:
