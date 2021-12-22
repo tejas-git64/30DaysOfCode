@@ -266,3 +266,30 @@ Methods used:
 - `scrollY` property returns the no of pixels for the document that is scrolled vertically
 - `innerHeight` property returns the height of a window's content area
 - `offsetTop` returns the top position (in pixels) relative to the top of the offsetParent element
+
+### Day 14: **Referencing vs Copying**
+
+#### Here we'll understand how we can create new arrays and objects by reference
+
+By **Referencing** we can directly manipulate the original array/object by index/object-key
+
+For Example let's take the array used in the stater file:
+
+`const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];`<br />
+
+Now lets say we want to manipulate this array => we manipulate the array using its index!
+
+`players[2] = 'Jake';`
+
+this on `console.log(players)` gives `['Wes', 'Sarah', 'Jake', 'Poppy'];`<br />
+
+but uh oh we've manipulated the original array ┌(。Д。)┐! instead we can reference it to another new variable and **copy** its array elements to the new variable, thereby not changing the original array q(≧▽≦q)
+
+ie let's create a new variable first:
+
+`const newPlayers = players;` // new variable created which points to the original array, but doing this copies the array elements to the new variable
+
+and on `console.log(newPlayers)` we get `['Wes', 'Sarah', 'Jake', 'Poppy'];` <br />
+Since previously manipulated the original array therefore the new array also carries the manipulated array
+
+⚠ This is pretty useful especially if we want to use the array multiple times without messing with the original array, this is somewhat like an _undo button_ equivalent to ensure you dont accidentally mess up along the lines while writing long lines of code..
