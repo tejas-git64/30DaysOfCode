@@ -302,6 +302,10 @@ Since previously manipulated the original array therefore the new array also car
 
 #### Here we are going to create a menu/todo list to representing saving of new information/text submitted by the user to local storage
 
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/147834618-8ebe8a6c-0187-493e-bb53-b28c9f9ccd9e.gif">
+</p>
+
 **What does it do?**
 lemme break it down for you stepwise before jumping in js because there's too many things going behind the scenes🤯
 
