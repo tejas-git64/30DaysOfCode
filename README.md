@@ -295,4 +295,32 @@ ie let's create a new variable first:
 and on `console.log(newPlayers)` we get `['Wes', 'Sarah', 'Jake', 'Poppy'];` <br />
 Since previously manipulated the original array therefore the new array also carries the manipulated array
 
-⚠ This is pretty useful especially if we want to use the array multiple times without messing with the original array, this is somewhat like an _undo button_ equivalent to ensure you dont accidentally mess up along the lines while writing long lines of code..
+⚠ This is pretty useful especially if we want to use the array multiple times without messing with the original array, this is somewhat like an _undo button_ equivalent to ensure you dont accidentally mess up along the lines while writing long lines of code.<br /><br />
+
+
+### Day 15: **Local Storage and Event Delegation**
+
+#### Here we are going to create a menu/todo list to representing saving of new information/text submitted by the user to local storage
+
+**What does it do?**
+lemme break it down for you stepwise before jumping in js because there's too many things going behind the scenes🤯
+
+- You type in any food(just basic text) in the form in the box => click the "+add item" button => it creates a list of it
+
+- It stores it in your browser's local storage to reflect it in the browser window even after refreshing it 
+
+#### **Stuff that makes it work**
+
+**Functions and other stuff used here:**
+
+- `preventDefault()` prevents the default refreshing state of the browser window ie it let's the values stay which is then populated into local storage
+- `addItem()` function adds the food that you type into the local storage using `JSON.stringify()` whenever the event listener hears a 'click' event
+- `setItem()` method sets the value of the specified Storage Object item ie in a localStorage
+- `populateList()` function uses an empty array names `plates` to stored the entered values, on clicking the `+add item` button this function is called to return the food string value as content to be displayed using the `innerHTML` method
+
+**This completes the entering, storing and displaying of entered value**
+
+**Creating a creative checkbox**
+Instead of using the standard checkbox which enables a tick, we've used emojis to do it and on checking it it uses a taco🌮 emoji
+
+- `toggleDone()` Using this function we manipulate the value of **done** which is a **Boolean** from `false` to `true` to change the emoji 

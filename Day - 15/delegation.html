@@ -42,14 +42,18 @@
     </svg>
 
     <div class="wrapper">
-      <h2>LOCAL TAPAS</h2>
+      <h2>YOUR  MENU</h2>
       <p></p>
       <ul class="plates">
         <li>Loading Tapas...</li>
       </ul>
       <form class="add-items">
         <input type="text" name="item" placeholder="Item Name" required />
-        <input type="submit" value="+ Add Item" />
+        <input type="submit" value="+ Add Item" >
+        <!--<p class="select-items">
+          <input type="button" id="select" value="Select All">
+          <input type="button" id="unselect" value="Clear All">
+        </p>-->
       </form>
     </div>
 
@@ -57,7 +61,8 @@
       const addItems = document.querySelector(".add-items");
       const itemsList = document.querySelector(".plates");
       const items = JSON.parse(localStorage.getItem("items")) || [];
-
+      const select = document.getElementById("select");
+      const unselect = document.getElementById("unselect");
       function addItem(e) {
         e.preventDefault();
         const text = this.querySelector("[name=item]").value;
@@ -100,6 +105,26 @@
       itemsList.addEventListener("click", toggleDone);
 
       populateList(items, itemsList);
+
+      //Selects all items
+      
+      //Still working on selecting all items 
+      /*function selectAll(e) {
+        if (!e.target.matches("input")) return; 
+        const food = e.target;
+        const index = food.dataset.index;
+        items[index].done == !items[index].done; 
+        localStorage.setItem("items", JSON.stringify(items));
+        populateList(items, itemsList);
+      };
+
+      select.addEventListener("click", selectAll);
+      //Unselects all items
+      function unSelectAll {
+        
+      }
+
+      unselect.addEventListener("click",unSelectAll);*/
     </script>
   </body>
 </html>
