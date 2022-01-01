@@ -344,6 +344,4 @@ Using the following `offset` functions we can manipulate the textShadow of our h
 - `offsetTop` property returns the top position (in pixels) relative to the top of the offsetParent element
 
 **mousemove** eventListener is used to output values on mouse hover on the div and h1
-=======
-- `toggleDone()` Using this function we manipulate the value of **done** which is a **Boolean** from `false` to `true` to change the emoji 
->>>>>>> addeb55d0aaf7e028ab6aee023e86c46a5a4e6c0
+
