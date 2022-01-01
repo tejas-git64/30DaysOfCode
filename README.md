@@ -323,4 +323,19 @@ lemme break it down for you stepwise before jumping in js because there's too ma
 **Creating a creative checkbox**
 Instead of using the standard checkbox which enables a tick, we've used emojis to do it and on checking it it uses a taco🌮 emoji
 
-- `toggleDone()` Using this function we manipulate the value of **done** which is a **Boolean** from `false` to `true` to change the emoji 
+- `toggleDone()` Using this function we manipulate the value of **done** which is a **Boolean** from `false` to `true` to change the emoji<br /><br />
+
+### Day 16: **CSS Hover Effects**
+
+#### Let's do some crazy stuff with text by manipulating css `text-shadow` properties using JS
+
+Here we've used **walk** as a standard width range, meaning it is used to map the values obtained from the hovered area to a max of **100** ie from a low of **-50** to a high of **50**
+
+Using the following `offset` functions we can manipulate the textShadow of our h1 text to output multiple trippy shadows 😵
+
+- `offsetWidth` property returns the viewable width of an element in pixels, including padding, border and scrollbar, but not the margin
+- `offsetHeight` property returns the viewable height of an element in pixels, including padding, border and scrollbar, but not the margin
+- `offsetLeft` property returns the left position (in pixels) relative to the left side the offsetParent element
+- `offsetTop` property returns the top position (in pixels) relative to the top of the offsetParent element
+
+**mousemove** eventListener is used to output values on mouse hover on the div and h1
