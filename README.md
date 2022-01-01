@@ -327,12 +327,15 @@ lemme break it down for you stepwise before jumping in js because there's too ma
 **Creating a creative checkbox**
 Instead of using the standard checkbox which enables a tick, we've used emojis to do it and on checking it it uses a taco🌮 emoji
 
-<<<<<<< HEAD
 - `toggleDone()` Using this function we manipulate the value of **done** which is a **Boolean** from `false` to `true` to change the emoji<br /><br />
 
 ### Day 16: **CSS Hover Effects**
 
 #### Let's do some crazy stuff with text by manipulating css `text-shadow` properties using JS
+
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/147847489-3a5ce818-12bb-4812-8664-4e74d0624b72.gif">
+</p>
 
 Here we've used **walk** as a standard width range, meaning it is used to map the values obtained from the hovered area to a max of **100** ie from a low of **-50** to a high of **50**
 
