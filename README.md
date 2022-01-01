@@ -302,6 +302,10 @@ Since previously manipulated the original array therefore the new array also car
 
 #### Here we are going to create a menu/todo list to representing saving of new information/text submitted by the user to local storage
 
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/147834618-8ebe8a6c-0187-493e-bb53-b28c9f9ccd9e.gif">
+</p>
+
 **What does it do?**
 lemme break it down for you stepwise before jumping in js because there's too many things going behind the scenes🤯
 
@@ -323,6 +327,7 @@ lemme break it down for you stepwise before jumping in js because there's too ma
 **Creating a creative checkbox**
 Instead of using the standard checkbox which enables a tick, we've used emojis to do it and on checking it it uses a taco🌮 emoji
 
+<<<<<<< HEAD
 - `toggleDone()` Using this function we manipulate the value of **done** which is a **Boolean** from `false` to `true` to change the emoji<br /><br />
 
 ### Day 16: **CSS Hover Effects**
@@ -339,3 +344,6 @@ Using the following `offset` functions we can manipulate the textShadow of our h
 - `offsetTop` property returns the top position (in pixels) relative to the top of the offsetParent element
 
 **mousemove** eventListener is used to output values on mouse hover on the div and h1
+=======
+- `toggleDone()` Using this function we manipulate the value of **done** which is a **Boolean** from `false` to `true` to change the emoji 
+>>>>>>> addeb55d0aaf7e028ab6aee023e86c46a5a4e6c0
