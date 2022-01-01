@@ -333,6 +333,10 @@ Instead of using the standard checkbox which enables a tick, we've used emojis t
 
 #### Let's do some crazy stuff with text by manipulating css `text-shadow` properties using JS
 
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/147847489-3a5ce818-12bb-4812-8664-4e74d0624b72.gif">
+</p>
+
 Here we've used **walk** as a standard width range, meaning it is used to map the values obtained from the hovered area to a max of **100** ie from a low of **-50** to a high of **50**
 
 Using the following `offset` functions we can manipulate the textShadow of our h1 text to output multiple trippy shadows 😵
