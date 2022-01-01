@@ -373,6 +373,33 @@ As it says **sort**, we use the array method `sort` which sorts the entire array
 We pass in an arrow `=>` function to compare the first one to the second and sort them accordingly, where **1** sorts them in ascending order while **-1** does the reverse
   - `map()` method creates a map of the sorted **bandnames** and pushes them onto the window as string keys
   - `join()` combines them as a whole set of strings, while removing any commas in-between them 
-Finally, we display them on the window using the `innerHTML` attribute
+Finally, we display them on the window using the `innerHTML` attribute<br /><br />
+
+### Day 18: Array Reduce
+ 
+#### Here we're going to understand reduce with another example, ie by using video time lengths 
+
+First let's know what it does
+
+- `reduce()` method executes a reducer function for array element, and return a single value ie accumulated result, it does not change the original array
+
+Now that we know what it does let's jump right in
+
+We've firstly added all the time-list elements to a new array **timenodes** using the `...` spread operator
+
+Next we're trying to convert all the time lengths into seconds and condense them into a single value to hold the total time in seconds using the `reduce()` method
+
+- `map()` method creates a map of the list as key-value pairs
+- `node` function returns the time given in the list
+- `timeCode` function uses destructing and splits the time into minutes and seconds by using the `split` method
+Now we multiply the `mins` value times 60 to get the value in seconds, then we add it to the `secs`,then `reduce` condenses all the values gained from mapping into one single value to get the total no of seconds
+
+Now we convert this huge value to hours, minutes and the rest to seconds 🕓
+1. We divide the seconds by 3600 to get the value in `hours`
+2. We use mod of the `secondsLeft` value to get the rest of the seconds 
+3. Next we further divide the rest of the seconds by 60 to get the value in minutes
+4. Finally we mod the rest of the seconds by 60 to get the rest of last value in seconds
+
+Now that's some good `reduce()` brushup, ain't it? ☜(ﾟヮﾟ☜)
 
 
