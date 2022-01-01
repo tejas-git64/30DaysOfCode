@@ -353,7 +353,7 @@ Using the following `offset` functions we can manipulate the textShadow of our h
 #### Here we are trying to sort an array of **bandnames** without considering the articles **a** , **an** or **the**
 
 <p align="center"> 
- <img src="">
+ <img src="https://user-images.githubusercontent.com/67954224/147855594-d3faaa92-1e58-4e82-8173-19900334214a.png">
 </p>
 
 Here's how we've done it here:
