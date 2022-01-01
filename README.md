@@ -327,7 +327,6 @@ lemme break it down for you stepwise before jumping in js because there's too ma
 **Creating a creative checkbox**
 Instead of using the standard checkbox which enables a tick, we've used emojis to do it and on checking it it uses a taco🌮 emoji
 
-<<<<<<< HEAD
 - `toggleDone()` Using this function we manipulate the value of **done** which is a **Boolean** from `false` to `true` to change the emoji<br /><br />
 
 ### Day 16: **CSS Hover Effects**
@@ -344,4 +343,32 @@ Using the following `offset` functions we can manipulate the textShadow of our h
 - `offsetTop` property returns the top position (in pixels) relative to the top of the offsetParent element
 
 **mousemove** eventListener is used to output values on mouse hover on the div and h1
+
+### Day 17: Sorting without articles
+
+#### Here we are trying to sort an array of **bandnames** without considering the articles **a** , **an** or **the**
+
+<p align="center"> 
+ <img src="">
+</p>
+
+Here's how we've done it here:
+
+1. Create a function to replace the article
+We do it by using the following method and regular expression:
+  - `replace()` method searches a string for a value or a regular expression, and returns a new string with the value(s) replaced 
+  - `trim()` method is used to remove any unwanted spaces in the string
+  **Regular Expression stuff(enclosed within the replace() method)**
+  - `/` indicates the beginning of a regular expression
+  - `^` is an assertion used in regular expressions, it matches the beginning of the input 
+  - `/i` is a flag used to search by ignoring case-sensitiveness 
+This completes removing the articles, now onto sorting them =D
+
+2. Sort the **bandnames** alphabetically
+As it says **sort**, we use the array method `sort` which sorts the entire array of **bandnames**
+We pass in an arrow `=>` function to compare the first one to the second and sort them accordingly, where **1** sorts them in ascending order while **-1** does the reverse
+  - `map()` method creates a map of the sorted **bandnames** and pushes them onto the window as string keys
+  - `join()` combines them as a whole set of strings, while removing any commas in-between them 
+Finally, we display them on the window using the `innerHTML` attribute
+
 
