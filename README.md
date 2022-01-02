@@ -403,3 +403,31 @@ Now we convert this huge value to hours, minutes and the rest to seconds 🕓
 Now that's some good `reduce()` brushup, ain't it? ☜(ﾟヮﾟ☜)
 
 
+### Day 19: Webcam fun with getUserMedia()
+
+#### Today we are going to work with live audio and video using JS built-in functions
+
+⚠ First let's get familiar with the important stuff that helps us bring out our video feed into our browser📷, the `getVideo()` function which we've used does exactly this 
+- `navigator` or `window.navigator` object contains information about the visitor's browser
+- `mediaDevices` is a read-only property returns a MediaDevices object, which provides access to connected media input devices like cameras and microphones, as well as screen sharing
+- `then()`  method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise
+- `play()` method plays the video ie the feed coming from the webcam 
+This gives us a small window of our live video feed
+
+#### Now onto our next task ie making the video appear big and allow it to use different filters/effects
+This is done using the `paintToCanvas()` function which uses the following JS methods
+
+- `drawImage()` method draws an image, canvas, or video onto the canvas, it can also draw parts of an image, and/or increase/reduce the image size
+- `getImageData()` returns an ImageData object representing the pixel data for a specified portion of the canvas
+- `putImageData()` method that copies the pixel data for a specified rectangle on a canvas
+
+The **takePhoto()** function is used to play the snapping audio for everytime you want to take a snap of yourself 
+
+#### The rest of the functions create the rgb effect on your video 
+
+- `redEffect()` function manipulates the pixels to create a red filter to the image
+- `rgbSplit()` function extracts the pixels out of the video into individual rgb color schemes to use it for creating custom filters by yourself by messing with the egb sliders
+- `greenScreen()` function creates a another filter effect 
+
+Playing with filters on JS am i right🤯
+That's it with this one, OOOF that was a big one indeed, even if you don't get it now,take your own time and make sure to take note of what each function does in the first place!, remember that this is a functional programming language(～￣▽￣)～ 
