@@ -262,6 +262,7 @@ We also use CSS's `active` pseudo class to translate it in the X direction and `
 </p>
 
 Methods used:
+
 - `forEach()` calls a function for each element in the array
 
 **Window** properties used:
@@ -297,7 +298,6 @@ Since previously manipulated the original array therefore the new array also car
 
 ⚠ This is pretty useful especially if we want to use the array multiple times without messing with the original array, this is somewhat like an _undo button_ equivalent to ensure you dont accidentally mess up along the lines while writing long lines of code.<br /><br />
 
-
 ### Day 15: **Local Storage and Event Delegation**
 
 #### Here we are going to create a menu/todo list to representing saving of new information/text submitted by the user to local storage
@@ -311,7 +311,7 @@ lemme break it down for you stepwise before jumping in js because there's too ma
 
 - You type in any food(just basic text) in the form in the box => click the "+add item" button => it creates a list of it
 
-- It stores it in your browser's local storage to reflect it in the browser window even after refreshing it 
+- It stores it in your browser's local storage to reflect it in the browser window even after refreshing it
 
 #### **Stuff that makes it work**
 
@@ -359,25 +359,27 @@ Using the following `offset` functions we can manipulate the textShadow of our h
 Here's how we've done it here:
 
 1. Create a function to replace the article
-We do it by using the following method and regular expression:
-  - `replace()` method searches a string for a value or a regular expression, and returns a new string with the value(s) replaced 
-  - `trim()` method is used to remove any unwanted spaces in the string
+   We do it by using the following method and regular expression:
+
+- `replace()` method searches a string for a value or a regular expression, and returns a new string with the value(s) replaced
+- `trim()` method is used to remove any unwanted spaces in the string
   **Regular Expression stuff(enclosed within the replace() method)**
-  - `/` indicates the beginning of a regular expression
-  - `^` is an assertion used in regular expressions, it matches the beginning of the input 
-  - `/i` is a flag used to search by ignoring case-sensitiveness 
-This completes removing the articles, now onto sorting them =D
+- `/` indicates the beginning of a regular expression
+- `^` is an assertion used in regular expressions, it matches the beginning of the input
+- `/i` is a flag used to search by ignoring case-sensitiveness
+  This completes removing the articles, now onto sorting them =D
 
 2. Sort the **bandnames** alphabetically
-As it says **sort**, we use the array method `sort` which sorts the entire array of **bandnames**
-We pass in an arrow `=>` function to compare the first one to the second and sort them accordingly, where **1** sorts them in ascending order while **-1** does the reverse
-  - `map()` method creates a map of the sorted **bandnames** and pushes them onto the window as string keys
-  - `join()` combines them as a whole set of strings, while removing any commas in-between them 
-Finally, we display them on the window using the `innerHTML` attribute<br /><br />
+   As it says **sort**, we use the array method `sort` which sorts the entire array of **bandnames**
+   We pass in an arrow `=>` function to compare the first one to the second and sort them accordingly, where **1** sorts them in ascending order while **-1** does the reverse
+
+- `map()` method creates a map of the sorted **bandnames** and pushes them onto the window as string keys
+- `join()` combines them as a whole set of strings, while removing any commas in-between them
+  Finally, we display them on the window using the `innerHTML` attribute<br /><br />
 
 ### Day 18: Array Reduce
- 
-#### Here we're going to understand reduce with another example, ie by using video time lengths 
+
+#### Here we're going to understand reduce with another example, ie by using video time lengths
 
 First let's know what it does
 
@@ -392,42 +394,63 @@ Next we're trying to convert all the time lengths into seconds and condense them
 - `map()` method creates a map of the list as key-value pairs
 - `node` function returns the time given in the list
 - `timeCode` function uses destructing and splits the time into minutes and seconds by using the `split` method
-Now we multiply the `mins` value times 60 to get the value in seconds, then we add it to the `secs`,then `reduce` condenses all the values gained from mapping into one single value to get the total no of seconds
+  Now we multiply the `mins` value times 60 to get the value in seconds, then we add it to the `secs`,then `reduce` condenses all the values gained from mapping into one single value to get the total no of seconds
 
 Now we convert this huge value to hours, minutes and the rest to seconds 🕓
+
 1. We divide the seconds by 3600 to get the value in `hours`
-2. We use mod of the `secondsLeft` value to get the rest of the seconds 
+2. We use mod of the `secondsLeft` value to get the rest of the seconds
 3. Next we further divide the rest of the seconds by 60 to get the value in minutes
 4. Finally we mod the rest of the seconds by 60 to get the rest of last value in seconds
 
-Now that's some good `reduce()` brushup, ain't it? ☜(ﾟヮﾟ☜)
-
+Now that's some good `reduce()` brushup, ain't it? ☜(ﾟヮﾟ ☜)
 
 ### Day 19: Webcam fun with getUserMedia()
 
 #### Today we are going to work with live audio and video using JS built-in functions
 
-⚠ First let's get familiar with the important stuff that helps us bring out our video feed into our browser📷, the `getVideo()` function which we've used does exactly this 
+⚠ First let's get familiar with the important stuff that helps us bring out our video feed into our browser📷, the `getVideo()` function which we've used does exactly this
+
 - `navigator` or `window.navigator` object contains information about the visitor's browser
 - `mediaDevices` is a read-only property returns a MediaDevices object, which provides access to connected media input devices like cameras and microphones, as well as screen sharing
-- `then()`  method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise
-- `play()` method plays the video ie the feed coming from the webcam 
-This gives us a small window of our live video feed
+- `then()` method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise
+- `play()` method plays the video ie the feed coming from the webcam
+  This gives us a small window of our live video feed
 
 #### Now onto our next task ie making the video appear big and allow it to use different filters/effects
+
 This is done using the `paintToCanvas()` function which uses the following JS methods
 
 - `drawImage()` method draws an image, canvas, or video onto the canvas, it can also draw parts of an image, and/or increase/reduce the image size
 - `getImageData()` returns an ImageData object representing the pixel data for a specified portion of the canvas
 - `putImageData()` method that copies the pixel data for a specified rectangle on a canvas
 
-The **takePhoto()** function is used to play the snapping audio for everytime you want to take a snap of yourself 
+The **takePhoto()** function is used to play the snapping audio for everytime you want to take a snap of yourself
 
-#### The rest of the functions create the rgb effect on your video 
+#### The rest of the functions create the rgb effect on your video
 
 - `redEffect()` function manipulates the pixels to create a red filter to the image
 - `rgbSplit()` function extracts the pixels out of the video into individual rgb color schemes to use it for creating custom filters by yourself by messing with the egb sliders
-- `greenScreen()` function creates a another filter effect 
+- `greenScreen()` function creates a another filter effect
 
 Playing with filters on JS am i right🤯
-That's it with this one, OOOF that was a big one indeed, even if you don't get it now,take your own time and make sure to take note of what each function does in the first place!, remember that this is a functional programming language(～￣▽￣)～ 
+That's it with this one, OOOF that was a big one indeed, even if you don't get it now,take your own time and make sure to take note of what each function does in the first place!, remember that this is a functional programming language(～￣ ▽ ￣)～<br /><br />
+
+### Day 20: Speech Recognition
+
+#### In this exercise we're going to dabble with speech recognition via JS using Speech recognition APIs
+
+- `SpeechRecognition` interface of the Web Speech API is the controller interface for the recognition service; this also handles the SpeechRecognitionEvent sent from the recognition service(as given in MDNs speech recognition reference
+
+- `new SpeechRecognition()` Creates a new SpeechRecognition object
+- `start()` Starts the recognition interface
+- `interimResults` property of the SpeechRecognition interface controls whether interim results should be returned (true) or not (false)
+- `lang` property of the SpeechRecognition interface returns and sets the language of the current SpeechRecognition. If not specified, this defaults to the HTML lang attribute value, or the user agent's language setting if that isn't set either
+  We then add event listeners to the SpeechRecognition interface to then store it into an array of words
+- `transcript` read-only property of the SpeechRecognitionResult interface returns a string containing the transcript of the speech recognition session
+- `map()` maps the results of the speech recognition
+- `join` join the results of the speech recognition into a single string/complete sentence
+
+If the speech recognition API successfully recognizes the speech, it transcribes the result and is appended into a `p` element onto the browser window
+
+There you go!!, now you can create your own voice recognition app, integrate this code into a weather app/ add it as your own little addition to your search related projects!
