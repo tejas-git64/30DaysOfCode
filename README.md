@@ -453,4 +453,27 @@ That's it with this one, OOOF that was a big one indeed, even if you don't get i
 
 If the speech recognition API successfully recognizes the speech, it transcribes the result and is appended into a `p` element onto the browser window
 
-There you go!!, now you can create your own voice recognition app, integrate this code into a weather app/ add it as your own little addition to your search related projects!
+There you go!!, now you can create your own voice recognition app, integrate this code into a weather app/ add it as your own little addition to your search related projects!<br /><br />
+
+### Day 21: Geolocation based Speedometer and Compass
+
+#### In this project we're gonna look at the compass and speedometer data coming off from our phone into out browser
+
+⚠ Unfortunately it only works well with iOS devices since safari browser has a good integration with iOS devices and also pulling data out from phone/emulator to display into our live server window
+ie **speed** and **compass** data
+
+Functions used in this project:
+
+- `navigator` object contains information about the visitor's browser
+- `geolocation` property returns a [Geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) object that can be used to locate the user's position, this property is read-only and is only available in secure contexts - https and only available on user's approval
+- `watchPosition()` method is used to register a handler function that will be called automatically each time the position of the device changes(as give in MDNs reference)
+  It takes a [GeolocationPosition](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationPosition) object as an input parameter, and can pass additional/optional parameters to the handler like:
+  - `success` a callback function that takes a [GeolocationPosition](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationPosition) object as an input parameter
+  - `error` parameter gives an optional callback function that takes a [GeolocationPositionError](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationPositionError) object as an input parameter
+  - `options` parameter gives an optional object that provides configuration options for the location watch
+    [GeolocationCoordinates](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates) interface represents the position and altitude of the device on Earth, as well as the accuracy with which these properties are calculated, the following properties of this interface are used:
+- `coords` ie **GeolocationCoordinates** for short
+- `speed` read-only property is a `double` representing the velocity of the device in meters per second. This value is null if the implementation is not able to measure it.
+- `heading` read-only property is a double representing the direction in which the device is traveling. This value, specified in degrees, indicates how far off from heading due north the device is. Zero represents true **North**
+
+Using the above API we gather the compass data from our phone/emulator which we then use it via template literals in our JS to manipulate the svg used with CSS `rotate` function to depict it as a real-time compass<br /><br />
