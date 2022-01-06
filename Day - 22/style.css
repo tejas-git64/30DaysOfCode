@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0; /* Important! */
+  font-family: sans-serif;
+  background: linear-gradient(45deg, #3df2ffd2, #e5ff00bd), url("./river.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-behavior: smooth;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 700px;
+  line-height: 2;
+  position: relative;
+}
+
+.wrapper p {
+  font-size: 25px;
+  color: #ffffffd3;
+}
+
+a {
+  text-decoration: none;
+  color: #aa6aff;
+  background: #fdfdfd2d;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+a:hover {
+  color: #000000;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.highlight {
+  transition: all 0.2s;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  left: 0;
+  z-index: -1;
+  border-radius: 15px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 20px;
+  color: #ffffff;
+  transition: 0.25s;
+}
+
+.menu a:hover {
+  color: #ffae00;
+}
