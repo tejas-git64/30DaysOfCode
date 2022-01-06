@@ -462,6 +462,10 @@ There you go!!, now you can create your own voice recognition app, integrate thi
 ⚠ Unfortunately it only works well with iOS devices since safari browser has a good integration with iOS devices and also pulling data out from phone/emulator to display into our live server window
 ie **speed** and **compass** data
 
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/148100409-80f725df-49b0-444c-9fcb-7f964c840b57.png">
+</p>
+
 Functions used in this project:
 
 - `navigator` object contains information about the visitor's browser
