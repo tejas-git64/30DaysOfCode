@@ -481,3 +481,25 @@ Functions used in this project:
 - `heading` read-only property is a double representing the direction in which the device is traveling. This value, specified in degrees, indicates how far off from heading due north the device is. Zero represents true **North**
 
 Using the above API we gather the compass data from our phone/emulator which we then use it via template literals in our JS to manipulate the svg used with CSS `rotate` function to depict it as a real-time compass<br /><br />
+
+### Day 22: Follow along links 
+
+#### Here we're gonna try and get links to be highlighted by on hover with their highlights being the exact size of them
+
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/148350946-7c86af1d-87b9-46b3-ba10-c1d680daab15.gif">
+</p>
+
+⚠ How it works: <br />
+We're gonna add a create a span element on every link we hover to create a hover/active link effect but of exact width while creating a follow through effect instead of just fading away when we move away from the link
+
+**Functions used in this project**: 
+- `getBoundingClientRect()` method returns a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) object providing information about the size of an element and its position relative to the viewport(as given in MDNs reference)
+-  `linkCoords` variable stores the size of the hovered link, you can view the details of the hovered element in the `console` to understand better
+-  `coords` is an object that stores the width and height along with the top and left values to determine the position of the links to highlight
+- `scrollX` property of the Window interface returns the number of pixels that the document is currently scrolled horizontally, which is used in our `coords.top` object
+- `scrollY` The read-only scrollY property of the Window interface returns the number of pixels that the document is currently scrolled vertically, which is used in our `coords.left` object
+
+Finally we add an `eventListener` for each `a` element that is given a `mouseenter` event, which inturn runs the `highlightLink()` to give us the **width** and **height** values of it 
+
+Using these values we can manipulate the width and height values of the `highlight` and then use CSSs `transform: translate()` property to follow whenever there is a click/hover on these links <br /><br />
