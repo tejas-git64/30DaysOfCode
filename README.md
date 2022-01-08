@@ -348,7 +348,7 @@ Using the following `offset` functions we can manipulate the textShadow of our h
 
 **mousemove** eventListener is used to output values on mouse hover on the div and h1
 
-### Day 17: Sorting without articles
+### Day 17: **Sorting without articles**
 
 #### Here we are trying to sort an array of **bandnames** without considering the articles **a** , **an** or **the**
 
@@ -377,7 +377,7 @@ Here's how we've done it here:
 - `join()` combines them as a whole set of strings, while removing any commas in-between them
   Finally, we display them on the window using the `innerHTML` attribute<br /><br />
 
-### Day 18: Array Reduce
+### Day 18: **Array Reduce**
 
 #### Here we're going to understand reduce with another example, ie by using video time lengths
 
@@ -405,7 +405,7 @@ Now we convert this huge value to hours, minutes and the rest to seconds 🕓
 
 Now that's some good `reduce()` brushup, ain't it? ☜(ﾟヮﾟ ☜)
 
-### Day 19: Webcam fun with getUserMedia()
+### Day 19: **Webcam fun with getUserMedia()**
 
 #### Today we are going to work with live audio and video using JS built-in functions
 
@@ -436,7 +436,7 @@ The **takePhoto()** function is used to play the snapping audio for everytime yo
 Playing with filters on JS am i right🤯
 That's it with this one, OOOF that was a big one indeed, even if you don't get it now,take your own time and make sure to take note of what each function does in the first place!, remember that this is a functional programming language(～￣ ▽ ￣)～<br /><br />
 
-### Day 20: Speech Recognition
+### Day 20: **Speech Recognition**
 
 #### In this exercise we're going to dabble with speech recognition via JS using Speech recognition APIs
 
@@ -455,7 +455,7 @@ If the speech recognition API successfully recognizes the speech, it transcribes
 
 There you go!!, now you can create your own voice recognition app, integrate this code into a weather app/ add it as your own little addition to your search related projects!<br /><br />
 
-### Day 21: Geolocation based Speedometer and Compass
+### Day 21: **Geolocation based Speedometer and Compass**
 
 #### In this project we're gonna look at the compass and speedometer data coming off from our phone into out browser
 
@@ -481,3 +481,52 @@ Functions used in this project:
 - `heading` read-only property is a double representing the direction in which the device is traveling. This value, specified in degrees, indicates how far off from heading due north the device is. Zero represents true **North**
 
 Using the above API we gather the compass data from our phone/emulator which we then use it via template literals in our JS to manipulate the svg used with CSS `rotate` function to depict it as a real-time compass<br /><br />
+
+### Day 23: **Speech-Synthesis**
+
+#### We have yet another speech related project and this one is going to be as interesting as earlier!
+
+**What's it about?**
+We're are creating a text-to-speech recognition project using javascript, which readily reads whatever text we type and converse it back to us in different voice-overs(depending on our OS)
+
+Let's understand how it works shall we?
+
+⚠ Stuff used in this project:
+
+`SpeechSynthesisUtterance` is a [WebSpeechAPI](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) that represents a speech request/speech service, it delivers various speech parameters like language, pitch and volume <br /><br />
+_For more info_
+
+- [SpeechSynthesisUtterance from MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance)
+- [Getting Started with Speech Synthesis by Matt West](https://blog.teamtreehouse.com/getting-started-speech-synthesis-api)<br /><br />
+
+#### **Let's get into the flow of doing it !!🚀**
+
+#### **1. Creating a box to input text**
+
+`msg.text` as in `SpeechSynthesisUtterance.text` receives the text that will be synthesized when something is spoken
+
+<br />
+
+#### **2. Listing the available voices**
+
+`populateVoices()` function is created to list out the different voices available to synthesize the text to a desired voice
+
+- `getVoices()` method returns a list of [SpeechSynthesisVoice](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisVoice) objects representing all the available voices on the current device
+- `filter()` method filters the voices to English (en-US/en)
+- `includes()` method checks if the list contains an `en` naming at the end of every language to categorize it as English
+- `map()` method maps the voices as keys and values and returns them as options to select in the dropdown list
+- `join` method joins the voices together as a whole list of voices
+
+This is done to get the voices available in your system to be used for the synthesis, which is then added to your innerHTML **dropdown list** so you can choose a voice of your choice from the available voices
+
+<br />
+
+#### **3. Setting the Selected Voice**
+
+- `setVoice()` function sets the voice of the speech output
+- `toggle()` function resets the page with all its contents set to the default values
+- `setOption()` function sets the selected option to override the default values
+
+<br />
+
+The rest are the `eventListeners` that are linked to the buttons and sliders that trigger the above mentioned functions to make it happen!! 🦜
