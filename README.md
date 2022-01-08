@@ -556,6 +556,11 @@ The rest are the `eventListeners` that are linked to the buttons and sliders tha
 ### Day 24: **Sticky Navigation**
 <br />
 
+
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/148652536-42c02995-9b93-46c0-b4a8-487629ce4c92.gif">
+</p>
+
 ### Today we'll alternate back to some CSS with sticky navigation
 
 Here we're going to make the **navbar** to fix its position to `fixed` when we almost hit the top of the **navbar** while scrolling down
