@@ -482,7 +482,7 @@ Functions used in this project:
 
 Using the above API we gather the compass data from our phone/emulator which we then use it via template literals in our JS to manipulate the svg used with CSS `rotate` function to depict it as a real-time compass<br /><br />
 
-<<<<<<< HEAD
+
 ### Day 23: **Speech-Synthesis**
 
 #### We have yet another speech related project and this one is going to be as interesting as earlier!
@@ -531,7 +531,7 @@ This is done to get the voices available in your system to be used for the synth
 <br />
 
 The rest are the `eventListeners` that are linked to the buttons and sliders that trigger the above mentioned functions to make it happen!! 🦜
-=======
+
 ### Day 22: Follow along links 
 
 #### Here we're gonna try and get links to be highlighted by on hover with their highlights being the exact size of them
