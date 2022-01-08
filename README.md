@@ -527,7 +527,6 @@ _For more info_
 
 #### **1. Creating a box to input text**
 `msg.text` as in `SpeechSynthesisUtterance.text` receives the text that will be synthesized when something is spoken
-
 <br />
 
 #### **2. Listing the available voices**
@@ -540,14 +539,12 @@ _For more info_
 - `join` method joins the voices together as a whole list of voices
 
 This is done to get the voices available in your system to be used for the synthesis, which is then added to your innerHTML **dropdown list** so you can choose a voice of your choice from the available voices
-
 <br />
 
 #### **3. Setting the Selected Voice**
 - `setVoice()` function sets the voice of the speech output
 - `toggle()` function resets the page with all its contents set to the default values
 - `setOption()` function sets the selected option to override the default values
-
 <br />
 
 The rest are the `eventListeners` that are linked to the buttons and sliders that trigger the above mentioned functions to make it happen!! 🦜
