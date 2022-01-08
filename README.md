@@ -483,55 +483,6 @@ Functions used in this project:
 Using the above API we gather the compass data from our phone/emulator which we then use it via template literals in our JS to manipulate the svg used with CSS `rotate` function to depict it as a real-time compass<br /><br />
 
 
-### Day 23: **Speech-Synthesis**
-
-#### We have yet another speech related project and this one is going to be as interesting as earlier!
-
-**What's it about?**
-We're are creating a text-to-speech recognition project using javascript, which readily reads whatever text we type and converse it back to us in different voice-overs(depending on our OS)
-
-Let's understand how it works shall we?
-
-⚠ Stuff used in this project:
-
-`SpeechSynthesisUtterance` is a [WebSpeechAPI](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) that represents a speech request/speech service, it delivers various speech parameters like language, pitch and volume <br /><br />
-_For more info_
-
-- [SpeechSynthesisUtterance from MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance)
-- [Getting Started with Speech Synthesis by Matt West](https://blog.teamtreehouse.com/getting-started-speech-synthesis-api)<br /><br />
-
-#### **Let's get into the flow of doing it !!🚀**
-
-#### **1. Creating a box to input text**
-
-`msg.text` as in `SpeechSynthesisUtterance.text` receives the text that will be synthesized when something is spoken
-
-<br />
-
-#### **2. Listing the available voices**
-
-`populateVoices()` function is created to list out the different voices available to synthesize the text to a desired voice
-
-- `getVoices()` method returns a list of [SpeechSynthesisVoice](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisVoice) objects representing all the available voices on the current device
-- `filter()` method filters the voices to English (en-US/en)
-- `includes()` method checks if the list contains an `en` naming at the end of every language to categorize it as English
-- `map()` method maps the voices as keys and values and returns them as options to select in the dropdown list
-- `join` method joins the voices together as a whole list of voices
-
-This is done to get the voices available in your system to be used for the synthesis, which is then added to your innerHTML **dropdown list** so you can choose a voice of your choice from the available voices
-
-<br />
-
-#### **3. Setting the Selected Voice**
-
-- `setVoice()` function sets the voice of the speech output
-- `toggle()` function resets the page with all its contents set to the default values
-- `setOption()` function sets the selected option to override the default values
-
-<br />
-
-The rest are the `eventListeners` that are linked to the buttons and sliders that trigger the above mentioned functions to make it happen!! 🦜
-
 ### Day 22: Follow along links 
 
 #### Here we're gonna try and get links to be highlighted by on hover with their highlights being the exact size of them
@@ -553,4 +504,51 @@ We're gonna add a create a span element on every link we hover to create a hover
 Finally we add an `eventListener` for each `a` element that is given a `mouseenter` event, which inturn runs the `highlightLink()` to give us the **width** and **height** values of it 
 
 Using these values we can manipulate the width and height values of the `highlight` and then use CSSs `transform: translate()` property to follow whenever there is a click/hover on these links <br /><br />
+
+
+### Day 23: **Speech-Synthesis**
+
+#### We have yet another speech related project and this one is going to be as interesting as earlier!
+
+**What's it about?**
+We're are creating a text-to-speech recognition project using javascript, which readily reads whatever text we type and converse it back to us in different voice-overs(depending on our OS)
+
+Let's understand how it works shall we?
+
+⚠ Stuff used in this project:
+
+`SpeechSynthesisUtterance` is a [WebSpeechAPI](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) that represents a speech request/speech service, it delivers various speech parameters like language, pitch and volume <br /><br />
+_For more info_
+
+- [SpeechSynthesisUtterance from MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance)
+- [Getting Started with Speech Synthesis by Matt West](https://blog.teamtreehouse.com/getting-started-speech-synthesis-api)<br /><br />
+
+#### **Let's get into the flow of doing it !!🚀**
+
+#### **1. Creating a box to input text**
+`msg.text` as in `SpeechSynthesisUtterance.text` receives the text that will be synthesized when something is spoken
+
+<br />
+
+#### **2. Listing the available voices**
+`populateVoices()` function is created to list out the different voices available to synthesize the text to a desired voice
+
+- `getVoices()` method returns a list of [SpeechSynthesisVoice](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisVoice) objects representing all the available voices on the current device
+- `filter()` method filters the voices to English (en-US/en)
+- `includes()` method checks if the list contains an `en` naming at the end of every language to categorize it as English
+- `map()` method maps the voices as keys and values and returns them as options to select in the dropdown list
+- `join` method joins the voices together as a whole list of voices
+
+This is done to get the voices available in your system to be used for the synthesis, which is then added to your innerHTML **dropdown list** so you can choose a voice of your choice from the available voices
+
+<br />
+
+#### **3. Setting the Selected Voice**
+- `setVoice()` function sets the voice of the speech output
+- `toggle()` function resets the page with all its contents set to the default values
+- `setOption()` function sets the selected option to override the default values
+
+<br />
+
+The rest are the `eventListeners` that are linked to the buttons and sliders that trigger the above mentioned functions to make it happen!! 🦜
 
