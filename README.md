@@ -482,8 +482,7 @@ Functions used in this project:
 
 Using the above API we gather the compass data from our phone/emulator which we then use it via template literals in our JS to manipulate the svg used with CSS `rotate` function to depict it as a real-time compass<br /><br />
 
-
-### Day 22: Follow along links 
+### Day 22: Follow along links
 
 #### Here we're gonna try and get links to be highlighted by on hover with their highlights being the exact size of them
 
@@ -494,17 +493,17 @@ Using the above API we gather the compass data from our phone/emulator which we 
 ⚠ How it works: <br />
 We're gonna add a create a span element on every link we hover to create a hover/active link effect but of exact width while creating a follow through effect instead of just fading away when we move away from the link
 
-**Functions used in this project**: 
+**Functions used in this project**:
+
 - `getBoundingClientRect()` method returns a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) object providing information about the size of an element and its position relative to the viewport(as given in MDNs reference)
--  `linkCoords` variable stores the size of the hovered link, you can view the details of the hovered element in the `console` to understand better
--  `coords` is an object that stores the width and height along with the top and left values to determine the position of the links to highlight
+- `linkCoords` variable stores the size of the hovered link, you can view the details of the hovered element in the `console` to understand better
+- `coords` is an object that stores the width and height along with the top and left values to determine the position of the links to highlight
 - `scrollX` property of the Window interface returns the number of pixels that the document is currently scrolled horizontally, which is used in our `coords.top` object
 - `scrollY` The read-only scrollY property of the Window interface returns the number of pixels that the document is currently scrolled vertically, which is used in our `coords.left` object
 
-Finally we add an `eventListener` for each `a` element that is given a `mouseenter` event, which inturn runs the `highlightLink()` to give us the **width** and **height** values of it 
+Finally we add an `eventListener` for each `a` element that is given a `mouseenter` event, which inturn runs the `highlightLink()` to give us the **width** and **height** values of it
 
 Using these values we can manipulate the width and height values of the `highlight` and then use CSSs `transform: translate()` property to follow whenever there is a click/hover on these links <br /><br />
-
 
 ### Day 23: **Speech-Synthesis**
 
@@ -526,10 +525,12 @@ _For more info_
 #### **Let's get into the flow of doing it !!🚀**
 
 #### **1. Creating a box to input text**
+
 `msg.text` as in `SpeechSynthesisUtterance.text` receives the text that will be synthesized when something is spoken
 <br />
 
 #### **2. Listing the available voices**
+
 `populateVoices()` function is created to list out the different voices available to synthesize the text to a desired voice
 
 - `getVoices()` method returns a list of [SpeechSynthesisVoice](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisVoice) objects representing all the available voices on the current device
@@ -542,10 +543,27 @@ This is done to get the voices available in your system to be used for the synth
 <br />
 
 #### **3. Setting the Selected Voice**
+
 - `setVoice()` function sets the voice of the speech output
 - `toggle()` function resets the page with all its contents set to the default values
 - `setOption()` function sets the selected option to override the default values
-<br />
+  <br />
 
 The rest are the `eventListeners` that are linked to the buttons and sliders that trigger the above mentioned functions to make it happen!! 🦜
+<br />
+<br />
 
+### Day 24: **Sticky Navigation**
+<br />
+
+### Today we'll alternate back to some CSS with sticky navigation
+
+Here we're going to make the **navbar** to fix its position to `fixed` when we almost hit the top of the **navbar** while scrolling down
+
+⚠ Functions used in this project:
+
+- `offsetTop` is a read-only property that returns the distance of the outermost border of the element relative to the inner border of the top of the parent element
+- `scrollY` property returns the number of pixels that the document is currently scrolled vertically
+- `offsetHeight` property returns the height of an element, including vertical padding and borders, as an integer
+
+On scrolling up top the `fixNav()` function is triggered by the `eventListener` which sets the navbar to `fixed` once the top scrolled pixel value is greater than or equal to the top distance of the **nav** by adding the CSS class `fixed-nav` along with **logo** with a `transition` of 0.5s, which enlarges it's `width` to a max of 500px.
