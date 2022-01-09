@@ -610,3 +610,27 @@ In Bubbling, we propagate/move up the element tree, ie from the child/target ele
 This is the reason why we get the entire tree/body of the element
 
 This completes our understanding of how events do their thing, Whew!
+<br /><br />
+
+### Day 26: **Follow up menu like in Stripe** 
+
+#### Today we're going to create an on hover menu which uses the same menu for every link but resizes and changes its contents accordingly
+<br /> 
+
+**LETS GOOOO!!**
+
+⚠ Stuff that makes it work:
+
+`handleEnter()` function toggles the CSS class `.trigger-enter` and `.trigger-enter-active` to display the menu on link hover
+
+We also use the `getBoundingClientRect()` method to get the size and position of the element with respect to the viewport
+
+We create two variables namely `dropdownCoords` and `navCoords` to hold size and position values of the **navigation** and the **dropdown**
+
+Next we create an object having multiple methods holding the values acquired by the above two variables 
+- `setProperty()` method sets a new value for a property on a CSS style declaration object 
+`handleLeave()` function removes the CSS classes set by the `handleEnter()` function
+
+Lastly `eventListeners` are used to listen `mouse` events and trigger the `handleLeave()` and `handleEnter()` functions 
+
+This creates a cool buttery smooth transitioning on hover menu, just satisfying to watch and interact with less clicks o(*￣︶￣*)o
