@@ -649,6 +649,11 @@ Here the `items` CSS class contains all the card items
 We also use all the **mouse** events like `mouseup`, `mousedown`, `mousemove` and `mouseleave`
 `isDone` is a flag value that is used in the `mouse` events
 
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/148688731-106dbb90-fa93-42cc-8aa2-eba2b12ed1d0.gif">
+</p>
+
+
 #### **Now let's understand how it works 🤔**
 
 Let's see what each `mouse` event does:
