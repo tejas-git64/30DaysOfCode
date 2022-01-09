@@ -617,6 +617,10 @@ This completes our understanding of how events do their thing, Whew!
 #### Today we're going to create an on hover menu which uses the same menu for every link but resizes and changes its contents accordingly
 <br /> 
 
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/148685279-af6d6066-6f13-469a-a4f1-922619c9f5d8.gif">
+</p>
+
 **LETS GOOOO!!**
 
 ⚠ Stuff that makes it work:
