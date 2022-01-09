@@ -574,18 +574,21 @@ Here we're going to make the **navbar** to fix its position to `fixed` when we a
 On scrolling up top the `fixNav()` function is triggered by the `eventListener` which sets the navbar to `fixed` once the top scrolled pixel value is greater than or equal to the top distance of the **nav** by adding the CSS class `fixed-nav` along with **logo** with a `transition` of 0.5s, which enlarges it's `width` to a max of 500px.
 <br /><br />
 
-### Day 25: Event Capture, Propagation and Bubbling
+### Day 25: **Event Capture, Propagation and Bubbling**
 
 #### Here we're going to understand some intriguing concepts in JS
 
 #### **Event Propagation** :
+
 Event propagation determines the no of events that are fired on the browser window, this includes all the events like `Onclick` events and link `a` events
 
 ⚠ Some important things to also understand:<br />
+
 - `capture` is a boolean value that tells the registered `listener` that events of this type should be dispatched
 - `once` is a boolean value indicating that the listener should be invoked at most once after being added
 
 **You can know more about these and many more event values down:**
+
 - [EventTargetaddEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 - [A simplified explanation of event propagation in JavaScript](https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/)
 - [Capture passive and once](https://webreflection.co.uk/blog/2016/04/17/new-dom4-standards)
@@ -597,10 +600,12 @@ Event propagation determines the no of events that are fired on the browser wind
 </p>
 
 #### **Event Capture** :
+
 In Event Capture, we propagate/move down the element tree, ie from the parent element to the child/target element
 This also gives us the entire tree/body of the element
 
 #### **Bubbling** :
+
 In Bubbling, we propagate/move up the element tree, ie from the child/target element to the parent element
 This is the reason why we get the entire tree/body of the element
 
