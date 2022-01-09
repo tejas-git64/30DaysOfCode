@@ -612,10 +612,11 @@ This is the reason why we get the entire tree/body of the element
 This completes our understanding of how events do their thing, Whew!
 <br /><br />
 
-### Day 26: **Follow up menu like in Stripe** 
+### Day 26: **Follow up menu like in Stripe**
 
 #### Today we're going to create an on hover menu which uses the same menu for every link but resizes and changes its contents accordingly
-<br /> 
+
+<br />
 
 <p align="center"> 
  <img src="https://user-images.githubusercontent.com/67954224/148685279-af6d6066-6f13-469a-a4f1-922619c9f5d8.gif">
@@ -631,10 +632,48 @@ We also use the `getBoundingClientRect()` method to get the size and position of
 
 We create two variables namely `dropdownCoords` and `navCoords` to hold size and position values of the **navigation** and the **dropdown**
 
-Next we create an object having multiple methods holding the values acquired by the above two variables 
-- `setProperty()` method sets a new value for a property on a CSS style declaration object 
-`handleLeave()` function removes the CSS classes set by the `handleEnter()` function
+Next we create an object having multiple methods holding the values acquired by the above two variables
 
-Lastly `eventListeners` are used to listen `mouse` events and trigger the `handleLeave()` and `handleEnter()` functions 
+- `setProperty()` method sets a new value for a property on a CSS style declaration object
+  `handleLeave()` function removes the CSS classes set by the `handleEnter()` function
 
-This creates a cool buttery smooth transitioning on hover menu, just satisfying to watch and interact with less clicks o(*￣︶￣*)o
+Lastly `eventListeners` are used to listen `mouse` events and trigger the `handleLeave()` and `handleEnter()` functions
+
+This creates a cool buttery smooth transitioning on hover menu, just satisfying to watch and interact with less clicks o(_￣︶￣_)o<br /><br />
+
+### Day 27: **Click and Drag**
+
+#### In this one we're going to create a scrollable joint-cards design which we can drag by our cursor
+
+Here the `items` CSS class contains all the card items
+We also use all the **mouse** events like `mouseup`, `mousedown`, `mousemove` and `mouseleave`
+`isDone` is a flag value that is used in the `mouse` events
+
+#### **Now let's understand how it works 🤔**
+
+Let's see what each `mouse` event does:
+
+- `mousemove` event is fired at an element when the mouse is moved while the cursor is inside it
+- `mouseup` event is fired at an element when a click is released while the pointer is located inside it
+- `mousedown` event is fired at an element when a click occurs while the pointer is inside the element
+- `mouseleave` event is fired at an element when we point/move out of it
+
+<br />
+
+Now that we're familiar with them let's move to how it works...
+
+#### 1. We grab the card layout to scroll
+
+When we do this the `mousedown` **eventListener** listens to the event and adds the class `active` to the **slider** variable which holds all the `items`
+
+#### 2. Then we calculate the **x/startX** value(to scroll):
+
+- `pageX` property returns the X(horizontal) coordinate (in pixels) at which the mouse was clicked, relative to the left edge of the entire document
+- `offsetLeft` property returns the number of pixels that the upper left corner of the current element is offset to the left
+
+After calculating the startX value we append it to the `slider` variable and store the resultant in the **scrollLeft** variable
+This value is used to calculate the dragging rate or `walk` distance to enable the scrolling effect, you can increase/decrease the card dragging rate by changing the multiplier(currently assigned is _2_) whenever a `mousemove` event occurs
+
+PS: The scrolling effect only occurs when either `mousedown` or `mousemove` event is fired
+
+That's it for today! 🍷🍷
