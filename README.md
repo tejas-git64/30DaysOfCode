@@ -682,3 +682,28 @@ This value is used to calculate the dragging rate or `walk` distance to enable t
 PS: The scrolling effect only occurs when either `mousedown` or `mousemove` event is fired
 
 That's it for today! 🍷🍷
+<br /><br  />
+
+### Day 28: **Custom Video Speed Controller UI**
+
+#### Today, we're gonna customize the native HTML video player's UI and speed rate components
+
+Here we've created a custom bar element for controlling the **video playbackRate**  
+
+⚠ Stuff used to make it work:
+ 
+- `pageY` is a [MouseEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent) property that returns the Y (vertical) coordinate in pixels of the event relative to the whole document
+- `offSetTop` property returns the distance of the outer border of the current element relative to the inner border of the top of the offsetParent node(as given by MDN)
+- `offSetHeight` property returns the height of an element, including vertical padding and borders, as an integer
+- `textContent` property represents the text content of the node and its descendants
+- `playBackRate` property sets the rate at which the media is being played. It implements user controls for fast forward, slow motion, and much more. 
+
+The normal playback rate is multiplied by this value to obtain the current rate, so a value of 1.0 indicates normal speed(currently set to 0.87/1x)
+
+1. We first calculate the `y` variable for the bar and then divide it by the `offSetHeight` property to find the percentage for changing the playback rate
+
+2. Then we calculate the playback rate by taking the difference of the max and min values added to the min value(Math needed to calculate the playback rate)
+
+3. Lastly, we link it with our custom bar to change/vary the playback rate on mouse hover over the bar(triggered by `eventListeners` which calls the `handleMove` function)
+
+There you have it!!
