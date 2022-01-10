@@ -691,7 +691,12 @@ That's it for today! 🍷🍷
 Here we've created a custom bar element for controlling the **video playbackRate**  
 
 ⚠ Stuff used to make it work:
- 
+
+
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/148813596-195ecf10-786c-47c7-a6e2-5fd6eb058f6f.gif">
+</p>
+
 - `pageY` is a [MouseEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent) property that returns the Y (vertical) coordinate in pixels of the event relative to the whole document
 - `offSetTop` property returns the distance of the outer border of the current element relative to the inner border of the top of the offsetParent node(as given by MDN)
 - `offSetHeight` property returns the height of an element, including vertical padding and borders, as an integer
