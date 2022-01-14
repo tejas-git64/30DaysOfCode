@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #fdff91;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  line-height: 1;
+  margin-bottom: 0;
+  color: #682600;
+}
+
+button {
+  width: 200px;
+  height: 120px;
+  background: #683b00;
+  border: none;
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: "Amatic SC", cursive;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 91%);
+  position: absolute;
+  top: 40%;
+  z-index: 5;
+}
+
+button:nth-child(1) {
+  left: 15vw;
+}
+
+button:nth-child(2) {
+  right: 15vw;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.score {
+  background: #ffffff;
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+}
+
+.game {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url("dirt.svg") bottom center no-repeat;
+  background-size: contain;
+  content: "";
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+
+.mole {
+  background: url("mole.svg") bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.hole.up .mole {
+  top: 0;
+}

@@ -759,3 +759,35 @@ Next we'll look into more functions which are used along with the `startTimer()`
   We then use the above data to display the time in _12hr_ clock format and display it onto the DOM
 
 Now here's a good timer 😆, only 1 more to GOOOOO!!!!🥂
+<br /><br />
+
+### Day 30: **Whack a Mole game!!**
+<br />
+
+#### In this last and final project, we'll take it easy and create this game
+
+<p align="center"> 
+ <img src="">
+</p>
+
+**The Game: The Rules: The Player**
+
+In this game, the player which is you has to whack! the mole given how fast it jumps back into it's hole, increase your score by simply clicking on it whenever any of them appear, cuz you don't wanna whack your screen do you?😆
+Keep clicking on them under 10 seconds, and the highest one wins!!
+<br />
+PS: there's no second player in this game, so play it with your friends one at a time taking turns 
+There are **9 moles**, **9 holes** and **10 seconds** to score
+
+**What makes it work?**
+
+`Math.random()` method is one of the main methods used here to set the following:
+  - Random mole **peep** time by `peep()` function which manipulates the `top` CSS values at each random interval
+  - Random appearance of mole in each hole by `randomHole()` function
+
+The rest being `eventListeners` triggered on click to calculate the **score** by running the `bonk()` function
+
+That's it!.....finally
+the loooong journey has finally come to an end
+<br />
+But there be more to your journey than what meets the eye👀
+
