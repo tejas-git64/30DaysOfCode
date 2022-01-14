@@ -762,12 +762,10 @@ Now here's a good timer 😆, only 1 more to GOOOOO!!!!🥂
 <br /><br />
 
 ### Day 30: **Whack a Mole game!!**
-<br />
-
 #### In this last and final project, we'll take it easy and create this game
 
 <p align="center"> 
- <img src="">
+ <img src="https://user-images.githubusercontent.com/67954224/149576700-4187f2d0-2ba0-49b8-a71c-03d216d88ba7.gif">
 </p>
 
 **The Game: The Rules: The Player**
@@ -791,3 +789,6 @@ the loooong journey has finally come to an end
 <br />
 But there be more to your journey than what meets the eye👀
 
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/149576953-7f811e57-cb45-44cd-966a-61a25b42a7a3.jpg">
+</p>
