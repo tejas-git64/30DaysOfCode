@@ -730,10 +730,11 @@ There you have it!!
 - Has a text input bar to give a custom time
 
 <br />
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/67954224/149551424-c8c6473f-73f2-4816-b699-70fa7aaace81.gif">
+</p>
 
 #### **Let's Begin Shall We 🚀🚀**
-
-<br />
 
 #### **Creating the timer ⏱**
 
