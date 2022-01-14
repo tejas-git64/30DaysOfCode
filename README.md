@@ -199,6 +199,10 @@ Example: `console.log('I am sleepy %s typing all of this code...zZzZZ', '😪');
 
   ![Screenshot 2021-12-10 193056](https://user-images.githubusercontent.com/67954224/145585643-abb10976-f9de-4ae4-870c-df412946a35e.png)
 
+That's it for today!!!
+<br />
+<br>
+
 ### Day 10: **JS Checkbox**
 
 #### **Today were gonna build the classic checkbox but with a catch!**
@@ -653,7 +657,6 @@ We also use all the **mouse** events like `mouseup`, `mousedown`, `mousemove` an
  <img src="https://user-images.githubusercontent.com/67954224/148688731-106dbb90-fa93-42cc-8aa2-eba2b12ed1d0.gif">
 </p>
 
-
 #### **Now let's understand how it works 🤔**
 
 Let's see what each `mouse` event does:
@@ -688,10 +691,9 @@ That's it for today! 🍷🍷
 
 #### Today, we're gonna customize the native HTML video player's UI and speed rate components
 
-Here we've created a custom bar element for controlling the **video playbackRate**  
+Here we've created a custom bar element for controlling the **video playbackRate**
 
 ⚠ Stuff used to make it work:
-
 
 <p align="center"> 
  <img src="https://user-images.githubusercontent.com/67954224/148813596-195ecf10-786c-47c7-a6e2-5fd6eb058f6f.gif">
@@ -701,7 +703,7 @@ Here we've created a custom bar element for controlling the **video playbackRate
 - `offSetTop` property returns the distance of the outer border of the current element relative to the inner border of the top of the offsetParent node(as given by MDN)
 - `offSetHeight` property returns the height of an element, including vertical padding and borders, as an integer
 - `textContent` property represents the text content of the node and its descendants
-- `playBackRate` property sets the rate at which the media is being played. It implements user controls for fast forward, slow motion, and much more. 
+- `playBackRate` property sets the rate at which the media is being played. It implements user controls for fast forward, slow motion, and much more.
 
 The normal playback rate is multiplied by this value to obtain the current rate, so a value of 1.0 indicates normal speed(currently set to 0.87/1x)
 
@@ -712,3 +714,47 @@ The normal playback rate is multiplied by this value to obtain the current rate,
 3. Lastly, we link it with our custom bar to change/vary the playback rate on mouse hover over the bar(triggered by `eventListeners` which calls the `handleMove` function)
 
 There you have it!!
+<br /><br />
+
+### Day 29: **Countdown timer**
+
+
+#### In this project we're gonna create a countdown timer, much like in our phones that might come in handy!
+
+<br />
+
+**What all does it have??**
+
+- Basic countdown timer functionality
+- Has a few presets for a quick countdown(20s, work, quick, snack and lunch break)
+- Has a text input bar to give a custom time
+
+<br />
+
+#### **Let's Begin Shall We 🚀🚀**
+
+<br />
+
+#### **Creating the timer ⏱**
+
+We create buttons with `eventListeners` that listen to a 'click' on them after which => we call the `startTimer()` function which takes the parameter `seconds` to which we pass our desired input value as an argument, using which it calculates the seconds by multiplying our `minutes` value times **60** to get the `seconds` value.<br />
+We only need the minutes value to make it work....right?<br />
+Well, Technically yes **BUT** we can add a little more touch to it to give us that **alarm** look like in our phone alarm clock 😪💤, which is why we're gonna use [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) method to give us the total no of seconds which will elapse on adding our `minutes` value, using which we can display the time left _untill calculated time_<br />
+`this.reset()` will reset/clear the form after **submit**
+
+Next we'll look into more functions which are used along with the `startTimer()` function:
+
+- `countdown` runs an arrow function after **1000** milliseconds or 1s<br />
+  It calculates the seconds left to display in the message under the countdown timer giving us the `secondsLeft` value, it then calls the `displayTimeLeft` function
+
+- `displayTimeLeft` functions calculates the `minutes` and `remainderSeconds` out of the large value
+  This is then displayed in the message and in the document `title`
+
+- `displayEndTime` functions calculates the time to arrive after completing its countdown, along with a message saying **untill _future time_** by using the _then_ value calculated earlier
+- `Date()` objects contain a number that represents milliseconds since 1 January 1970 UTC(by MDN reference)<br />
+  More info on date => [Date()]() .
+- `getHours()` method returns the hour for the specified date, according to local time
+- `getMinutes()` method returns the minutes for the specified date, according to the local time
+  We then use the above data to display the time in _12hr_ clock format and display it onto the DOM
+
+Now here's a good timer 😆, only 1 more to GOOOOO!!!!🥂

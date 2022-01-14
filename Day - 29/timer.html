@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+  <div class="timer">
+    <div class="timer__controls">
+      <button data-time="20" class="timer__button">20s</button>
+      <button data-time="60" class="timer__button">1 minute</button>
+      <button data-time="2700" class="timer__button">focus time</button>
+      <form name="customForm" id="custom">
+        <input type="text" name="minutes" placeholder="Enter Minutes">
+      </form>
+      <button data-time="900" class="timer__button">power nap</button>
+      <button data-time="1200" class="timer__button">break</button>
+      <button data-time="3600" class="timer__button">movie hr</button>
+    </div>
+    <div class="display">
+      <h1 class="display__time-left"></h1>
+      <p class="display__end-time"></p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
