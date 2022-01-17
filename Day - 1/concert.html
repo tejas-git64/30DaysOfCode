@@ -106,19 +106,22 @@
     <audio data-key="74" src="./sounds/snare.wav"></audio>
     <audio data-key="75" src="./sounds/tom.wav"></audio>
     <audio data-key="76" src="./sounds/tink.wav"></audio>
+    <audio src="./sounds/wrong.mp3"></audio>
 
     <script>
+      "use strict";
       window.addEventListener("keydown", function (e) {
         const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
         audio.currentTime = 0;
-        if (!audio) return; // stop the function from turning off
         key.classList.add("pressed");
         audio.play(); // plays the audio for the key pressed
-      });
-      window.addEventListener("keyup", function (e) {
-        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-        key.classList.remove("pressed");
+
+        // stop the function from turning off
+        window.addEventListener("keyup", function (e) {
+          const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+          key.classList.remove("pressed");
+        });
       });
     </script>
   </body>
