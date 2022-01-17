@@ -113,15 +113,15 @@
       window.addEventListener("keydown", function (e) {
         const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        audio.currentTime = 0;
-        key.classList.add("pressed");
-        audio.play(); // plays the audio for the key pressed
-
-        // stop the function from turning off
-        window.addEventListener("keyup", function (e) {
-          const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-          key.classList.remove("pressed");
-        });
+          audio.currentTime = 0;
+          key.classList.add("pressed");
+          audio.play(); // plays the audio for the key pressed
+          
+          // stop the function from turning off
+          window.addEventListener("keyup", function (e) {
+            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+            key.classList.remove("pressed");
+          });
       });
     </script>
   </body>
